@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AB Portfolio V2</title>
+    <meta name="description" content="Andres B - Web Developer & Software Engineer. Explore my projects, experience, and skills in web development, React, Python, and more.">
+    <title>Andres B | Web Developer & Software Engineer</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>AB</text></svg>">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="script.js"></script>
-
 </head>
 <body>
     <header>
@@ -15,8 +16,10 @@
             <div class="logo">
                 <a href="#">AB</a>
             </div>
-            <i class="fa-solid fa-bars"></i>
-            <nav>
+            <button class="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                <i class="fa-solid fa-bars" aria-hidden="true"></i>
+            </button>
+            <nav id="main-nav">
                 <ul class="nav__links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#projects">Projects</a></li>
@@ -27,117 +30,117 @@
         </div>
     </header>
     <section class="home" id="home">
-        <img src="./image.png" alt="face">
+        <img src="./image.png" alt="Photo of Andres">
         <h1>Hi! I'm Andres, a <span>web developer</span> and <span>software engineer</span></h1>
-        <p>I am passinate with everything in the tech industry, from hardware to software my passion began when I was little, always playing with gadgets and dismanteling them to see how things worked. Now that I'm older I've turn to the software side of things, starting my journey with a simple coding class at university.</p>
+        <p>I am passionate about everything in the tech industry, from hardware to software my passion began when I was little, always playing with gadgets and dismantling them to see how things worked. Now that I'm older I've turned to the software side of things, starting my journey with a simple coding class at university.</p>
         <div class="information">
-            <button class="white" href="contact">Get in Touch</button>
-            <button class="black" href="#">Download CV</button>
+            <a class="btn btn--white" href="#contact">Get in Touch</a>
+            <a class="btn btn--black" href="#">Download CV</a>
         </div>
     </section>
     <section class="skills">
-        <h1>EXPERIENCE WITH</h1>
+        <h2>EXPERIENCE WITH</h2>
         <div class="skills__logos">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-react"></i>
-            <i class="fa-brands fa-python"></i>
-            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-html5" aria-hidden="true" title="HTML5"></i>
+            <i class="fa-brands fa-css3-alt" aria-hidden="true" title="CSS3"></i>
+            <i class="fa-brands fa-js" aria-hidden="true" title="JavaScript"></i>
+            <i class="fa-brands fa-react" aria-hidden="true" title="React"></i>
+            <i class="fa-brands fa-python" aria-hidden="true" title="Python"></i>
+            <i class="fa-brands fa-node-js" aria-hidden="true" title="Node.js"></i>
         </div>
     </section>
     <section class="projects" id="projects">
-        <h1>PROJECTS</h1>
+        <h2>PROJECTS</h2>
         <div class="projects__cards">
             <div class="project__container">
                 <div class="image__container">
-                    <img src="coming-soon.avif" alt="project #1">
+                    <img src="coming-soon.avif" alt="Project 1 screenshot - coming soon">
                 </div>  
                 <div class="info__container">
                     <p class="project__title">Project #1</p>
                     <p class="project__description">Brief description of project #1</p>
                     <div class="skills__used">
-                        <i class="fa-brands fa-html5" id="html"></i>
-                        <i class="fa-brands fa-css3-alt" id="css"></i>
-                        <i class="fa-brands fa-js" id="js"></i>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
             <div class="project__container">
                 <div class="image__container">
-                    <img src="coming-soon.avif" alt="project #1">
+                    <img src="coming-soon.avif" alt="Project 2 screenshot - coming soon">
                 </div>  
                 <div class="info__container">
                     <p class="project__title">Project #2</p>
                     <p class="project__description">Brief description of project #2</p>
                     <div class="skills__used">
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css3-alt"></i>
-                        <i class="fa-brands fa-js"></i>
+                        <i class="fa-brands fa-html5" aria-hidden="true"></i>
+                        <i class="fa-brands fa-css3-alt" aria-hidden="true"></i>
+                        <i class="fa-brands fa-js" aria-hidden="true"></i>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <section class="experience" id="experience">
-        <h1>EXPERIENCE</h1>
+        <h2>EXPERIENCE</h2>
         <div class="experience__container">
             <div class="role">
-                <i class="fa-solid fa-laptop-code" id="web"></i>
-                <h2>Web developer</h2>
+                <i class="fa-solid fa-laptop-code" id="web" aria-hidden="true"></i>
+                <h3>Web Developer</h3>
                 <p>Sep 2022 - Present</p>
             </div>
             <div class="role__description">
-                <p>Proficient in Python, React, and JavaScript, with experience in developing web applications and automation scripts. Skilled in version control using Git and team collaboration on platforms like GitHub and GitLab. Strong ability to identify and fix bugs, optimize code, and implement solutions to enhance software performance.                </p>
+                <p>Proficient in Python, React, and JavaScript, with experience in developing web applications and automation scripts. Skilled in version control using Git and team collaboration on platforms like GitHub and GitLab. Strong ability to identify and fix bugs, optimize code, and implement solutions to enhance software performance.</p>
             </div>
         </div>
         <div class="experience__container">
             <div class="role">
-                <i class="fa-solid fa-chart-simple" id="analyst"></i>
-                <h2>Retail & ECommerce Analyst @ Intradeco</h2>
+                <i class="fa-solid fa-chart-simple" id="analyst" aria-hidden="true"></i>
+                <h3>Retail & ECommerce Analyst @ Intradeco</h3>
                 <p>Sep 2021 - Present</p>
             </div>
             <div class="role__description">
-                <p>
-                    Utilized data analysis to identify trends and opportunities, driving significant improvements in sales strategies and overall performance. Expertise in managing large datasets, including data cleaning, manipulation, and statistical analysis, to extract actionable insights and support informed decision-making. Implemented automation solutions for repetitive tasks, increasing operational efficiency and enabling a stronger focus on strategic analysis and insights.
-                </p>
+                <p>Utilized data analysis to identify trends and opportunities, driving significant improvements in sales strategies and overall performance. Expertise in managing large datasets, including data cleaning, manipulation, and statistical analysis, to extract actionable insights and support informed decision-making. Implemented automation solutions for repetitive tasks, increasing operational efficiency and enabling a stronger focus on strategic analysis and insights.</p>
             </div>
         </div>
         <div class="experience__container">
             <div class="role">
-                <i class="fa-solid fa-ranking-star" id="qa"></i>
-                <h2>QA Intern @ SigmaQ Specialty</h2>
+                <i class="fa-solid fa-ranking-star" id="qa" aria-hidden="true"></i>
+                <h3>QA Intern @ SigmaQ Specialty</h3>
                 <p>Jan 2021 - Jun 2021</p>
             </div>
             <div class="role__description">
-                <p>
-                    Developed and executed quality control procedures to ensure high standards in products and services. Coordinated thorough testing to identify defects and ensure compliance with predefined specifications and standards. Analyzed feedback data to identify areas for improvement and led quality initiatives to enhance efficiency and customer satisfaction.
-                </p>
+                <p>Developed and executed quality control procedures to ensure high standards in products and services. Coordinated thorough testing to identify defects and ensure compliance with predefined specifications and standards. Analyzed feedback data to identify areas for improvement and led quality initiatives to enhance efficiency and customer satisfaction.</p>
             </div>
         </div>
         <div class="experience__container">
             <div class="role">
-                <i class="fa-solid fa-headset" id="cs"></i>
-                <h2>Customer Service Representative @ Telus International</h2>
+                <i class="fa-solid fa-headset" id="cs" aria-hidden="true"></i>
+                <h3>Customer Service Representative @ Telus International</h3>
                 <p>Jul 2020 - Dec 2020</p>
             </div>
             <div class="role__description">
-                <p>
-                    Provided exceptional customer service by responding professionally and efficiently to inquiries, complaints, and requests across multiple communication channels, including phone calls, emails, and online chats. Quickly identified customer needs and concerns, investigated situations, and delivered effective solutions to ensure customer satisfaction.
-                </p>
+                <p>Provided exceptional customer service by responding professionally and efficiently to inquiries, complaints, and requests across multiple communication channels, including phone calls, emails, and online chats. Quickly identified customer needs and concerns, investigated situations, and delivered effective solutions to ensure customer satisfaction.</p>
             </div>
         </div>
     </section>
     <footer id="contact">
         <div class="contact">
-            <h1>Contact</h1>
+            <h2>Contact</h2>
             <p>I'd love to hear from you! Whether you have a project in mind, a question about my work, or just want to connect, feel free to reach out. You can contact me via email or through my social media channels. I am always excited to collaborate with like-minded individuals and explore new opportunities.</p>
             <div class="contact__links">
-                <i class="fa-solid fa-envelope"></i>
-                <i class="fa-brands fa-linkedin"></i>
-                <i class="fa-brands fa-github"></i>
+                <a href="mailto:your@email.com" aria-label="Send me an email">
+                    <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                </a>
+                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit my LinkedIn profile">
+                    <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+                </a>
+                <a href="https://github.com/Pandabar8" target="_blank" rel="noopener noreferrer" aria-label="Visit my GitHub profile">
+                    <i class="fa-brands fa-github" aria-hidden="true"></i>
+                </a>
             </div>
-            <p class="footer">My Portfolio 2024</p>
+            <p class="footer">My Portfolio <span id="footer-year"></span></p>
         </div>
     </footer>
 </body>
